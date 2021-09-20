@@ -42,7 +42,7 @@
         <fieldset>
             <legend>Encuesta</legend>
             <p>
-                <label for="propuestas">Elige las propuestas que más te gusten</label>
+                <label for="propuestas">Elige las propuestas que más te gusten</label><br>
                 <input type="checkbox" name="propuestas" value="1"/>Cafetería<br>
                 <input type="checkbox" name="propuestas" value="2"/>Biblioteca<br>
                 <input type="checkbox" name="propuestas" value="3"/>Piscina<br>
@@ -51,7 +51,30 @@
                 <input type="checkbox" name="propuestas" value="6"/>Aulas<br>
                 <input type="checkbox" name="propuestas" value="7"/>Parking<br>
             </p>
+            <p>
+                <label for="propuestas2">Elige una</label><br>
+                <input type="radio" name="propuestas2" value="1"/>Cafetería<br>
+                <input type="radio" name="propuestas2" value="2"/>Biblioteca<br>
+                <input type="radio" name="propuestas2" value="3"/>Piscina<br>
+                <input type="radio" name="propuestas2" value="4"/>Baños<br>
+            </p>
         </fieldset>
+        <fieldset>
+            <legend>Más propuestas</legend>
+            <p>
+                <label for="hora_salida">Elige una hora para salir de clase:</label>
+                <input type="time" name="hora_salida"/>             
+            </p>
+            <p>
+                <label for="color_aula">Elige un color:</label>
+                <input type="color" name="color_aula"/>       
+            </p>
+            <p>
+                <label for="indices">Indice satisfaccion:</label>
+                <input type="range" name="indices" min="0" max="5"/> 
+            </p>
+        </fieldset>
+        <input type="submit" formaction="procesar()" value="ENVIAR"/>
     </form>
 </body>
 </html>
