@@ -10,10 +10,47 @@
     <form method="POST" action="procesar()">
         <fieldset>
             <legend>Datos personales</legend>
-            <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" placeholder="Nombre y apellidos"/>
-            <label for="edad">Edad:</label>
-            <input type="number" name="edad" value="18"/>
+            <p>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" placeholder="Nombre y apellidos"/>
+            </p>
+            <p>
+                <label for="edad">Edad:</label>
+                <input type="number" name="edad" value="18"/>
+            </p>
+            <p>
+                <label for="tlf">Teléfono</label>
+                <input type="tel" name="tlf" required/>
+            </p>
+            <p>
+                <label for="mail">E-mail</label>
+                <input type="email" name="mail" required/>
+            </p>
+            <p>
+                <label for="nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="nacimiento" required/>
+            </p>
+            <p>
+                <label for="tipo_votante">Tipo de votante:</label>
+                <select name="tipo_votante">
+                    <option value="1" selected>Alumno</option>
+                    <option value="2">Profesor</option>
+                    <option value="3">Otro</option>
+                </select>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Encuesta</legend>
+            <p>
+                <label for="propuestas">Elige las propuestas que más te gusten</label>
+                <input type="checkbox" name="propuestas" value="1"/>Cafetería<br>
+                <input type="checkbox" name="propuestas" value="2"/>Biblioteca<br>
+                <input type="checkbox" name="propuestas" value="3"/>Piscina<br>
+                <input type="checkbox" name="propuestas" value="4"/>Baños<br>
+                <input type="checkbox" name="propuestas" value="5"/>Ordenadores<br>
+                <input type="checkbox" name="propuestas" value="6"/>Aulas<br>
+                <input type="checkbox" name="propuestas" value="7"/>Parking<br>
+            </p>
         </fieldset>
     </form>
 </body>
