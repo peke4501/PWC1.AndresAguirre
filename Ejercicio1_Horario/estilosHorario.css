@@ -1,0 +1,39 @@
+
+*{
+
+  box-sizing: border-box;
+
+}
+table {
+  border-collapse: collapse;
+  background-color: lightgrey;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: small;
+ }
+ td,th{
+  width: 200px;
+  padding: 20px;
+  border: 1px solid gray;
+  text-align: center;
+}
+.asignatura{
+
+  background-color: bisque;
+  padding: 0px;
+
+}
+.asignatura .texto{
+
+  background-color: darkgrey;
+
+}
+.asignatura .horaInicio{
+
+  text-align: left;
+
+}
+.asignatura .horaFin{
+
+  text-align: left;
+
+}
